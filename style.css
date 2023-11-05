@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dff0f3;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }  
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey;
+border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #8d8fa9;
+border-radius: 10px;
+}
+
+.container {
+    height: 500px;
+    background: linear-gradient(#a3d4dd, #9198e5);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0,0.08);
+    padding: 50px;
+    border-radius: 10px;
+    width: 430px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.container h3{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #9198e5;
+    user-select: none;
+}
+.typeInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.typeInput input {
+    outline: none;
+    padding: 10px 20px;
+    width: 100%;
+    margin-right: 20px;
+    font-size: 15px;
+}
+.typeInput button {
+    font-size: 30px;
+    padding: 2px 11px;
+    color: #b2adad;
+    cursor: pointer;
+}
+.typeInput input, .typeInput button {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0,0.08);
+    border: none;
+    background-color: #fff;
+}
+.typeInput button:hover {
+    color: #707070;
+}
+.render {
+    margin-top: 20px;
+}
+.render span {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.render ul li {
+    background-color: #fff;
+    list-style: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0,0.08);
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: justify;
+    overflow: hidden;
+}
+.render ul li div {
+    display: flex;
+    justify-content: flex-end;
+}
+.render ul li div button {
+    margin-top: 10px;
+    background-color: #fff;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+.render ul li:last-child {
+    margin-bottom: 5px;
+}
+
+
+#imgNothing {
+    width: 100%;
+    margin-top: 40px;
+    pointer-events: none;
+    user-select: none;
+    display: none;
+}
